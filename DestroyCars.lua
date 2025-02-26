@@ -22,17 +22,17 @@ if raceStartedFlag then
 					if not occupant or not occupant:IsA("Humanoid") then
 						car:Destroy()
 					else
-						print("✅ " .. car.Name .. " is occupied, keeping it.")
+						print(".. car.Name .. " is occupied, keeping it.")
 					end
 				else
-					print("⚠️ " .. car.Name .. " has no VehicleSeat!")
+					print( .. car.Name .. " has no VehicleSeat!")
 				end
 			else
-				print("❌ car" .. i .. " not found in Workspace.")
+				print( .. i .. " not found in Workspace.")
 			end
 		end
-		print("🔄 Car cleanup complete!")
+		print(" Car cleanup complete!")
 	end
 else
-	warn("❌ RaceStartedFlag not found in ReplicatedStorage!")
+	warn("RaceStartedFlag not found in ReplicatedStorage!")
 end
